@@ -1,0 +1,17 @@
+<view class="container">  
+ <view class="weui-msg view1"> 
+  <icon type="success" size="75"></icon> 
+  <view class="weui-article__h1">
+    联系我们 
+  </view> 
+  <view class="weui-article__p">
+    DIY官网:http://www.diygw.com 
+  </view> 
+  <view class="weui-article__p">
+    作者:邓志锋 
+  </view> 
+  <view class="weui-article__p">
+    QQ：280160522 
+  </view> 
+ </view> 
+</view>

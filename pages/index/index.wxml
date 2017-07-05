@@ -1,0 +1,58 @@
+<view class="container">  
+ <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" current="0" circular="true" duration="1000" style="height:150px"> 
+  <block wx:for-items="{{swipers1}}" wx:key="{{index}}"> 
+   <navigator bindtap="navigateTo" data-url="{{item.url}}" data-zdys="{}"> 
+    <swiper-item> 
+     <image src="{{item.thumb_url}}" class="slide-image" /> 
+    </swiper-item> 
+   </navigator> 
+  </block> 
+ </swiper>   
+ <view class="weui-grids"> 
+  <block wx:for-items="{{grids2}}" wx:key="{{index}}"> 
+   <navigator bindtap="navigateTo" data-url="{{item.url}}" class="weui-grid weui-grid-25" hover-class="weui-grid_active" data-zdys="{&quot;name_453443&quot;:&quot;{{item.id}}&quot;}"> 
+    <image class="weui-grid__icon" src="{{item.thumb_url}}" mode="scaleToFill" style="width:40px;height:40px;" /> 
+    <view class="weui-grid__label">
+     <view class="weui-pl">
+      {{item.name_291719}}
+     </view>
+    </view> 
+   </navigator> 
+  </block> 
+ </view>   
+ <view> 
+  <block wx:for-items="{{msgs3}}" wx:key="{{index}}"> 
+   <navigator bindtap="navigateTo" data-url="{{item.url}}" data-zdys="{}" class="weui-media-box weui-media-box_appmsg"> 
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg"> 
+     <image class="weui-media-box__thumb" src="{{item.thumb_url}}" /> 
+    </view> 
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg"> 
+     <view class="weui-media-box__title">
+      <view class="weui-pl">
+       {{item.name_277385}}
+      </view>
+     </view> 
+     <view class="weui-media-box__desc">
+      <view class="weui-pl">
+       {{item.name_288441}}
+      </view>
+     </view> 
+    </view> 
+   </navigator> 
+  </block> 
+  <view class="prompt-container"> 
+   <view class="prompt-message" hidden="{{ msgsHasNext3 }}"> 
+    <image src="../../assets/images/iconfont-empty.png" class="prompt-icon" /> 
+    <view class="prompt-title">
+     温馨提示
+    </view> 
+    <view class="prompt-text">
+     没有更多内容了哟
+    </view> 
+   </view> 
+   <view class="prompt-button-area" hidden="{{ !msgsHasNext3 }}"> 
+    <button type="primary" size="default" class="prompt-button" hover-class="button-hover" bindtap="getMsgs3">点击加载</button> 
+   </view> 
+  </view> 
+ </view> 
+</view>

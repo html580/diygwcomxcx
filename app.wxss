@@ -1,0 +1,7 @@
+@import 'assets/style/weui.wxss';
+@import 'assets/style/weui-extend.wxss';
+.weui-tabbar__icon{
+	height:40px;
+	width:40px;
+}
+

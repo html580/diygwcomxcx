@@ -1,0 +1,37 @@
+<view class="container">   
+ <view> 
+  <block wx:for-items="{{msgs1}}" wx:key="{{index}}"> 
+   <navigator bindtap="navigateTo" data-url="{{item.url}}" data-zdys="{&quot;name_453443&quot;:&quot;{{item.id}}&quot;}" class="weui-media-box weui-media-box_appmsg"> 
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg"> 
+     <image class="weui-media-box__thumb" src="{{item.thumb_url}}" /> 
+    </view> 
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg"> 
+     <view class="weui-media-box__title">
+      <view class="weui-pl">
+       {{item.name_291719}}
+      </view>
+     </view> 
+     <view class="weui-media-box__desc">
+      <view class="weui-pl">
+       {{item.name_291719}}
+      </view>
+     </view> 
+    </view> 
+   </navigator> 
+  </block> 
+  <view class="prompt-container"> 
+   <view class="prompt-message" hidden="{{ msgsHasNext1 }}"> 
+    <image src="../../assets/images/iconfont-empty.png" class="prompt-icon" /> 
+    <view class="prompt-title">
+     温馨提示
+    </view> 
+    <view class="prompt-text">
+     没有更多内容了哟
+    </view> 
+   </view> 
+   <view class="prompt-button-area" hidden="{{ !msgsHasNext1 }}"> 
+    <button type="primary" size="default" class="prompt-button" hover-class="button-hover" bindtap="getMsgs1">点击加载</button> 
+   </view> 
+  </view> 
+ </view> 
+</view>

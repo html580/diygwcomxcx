@@ -1,0 +1,62 @@
+{
+	"pages" : [
+		"pages/index/index",
+	"pages/fl/index",
+	"pages/fl2/index",
+	"pages/about/index",
+	"pages/detail/index",
+	"pages/details/index",
+	"pages/page801435/index",
+	"pages/details941358/index",
+	"pages/link/index",
+	"pages/logs/logs",
+	"pages/error/index",
+	"pages/empty/index"
+	],
+	"window" : {
+		"navigationBarBackgroundColor": "#009944",
+	    "navigationBarTextStyle": "white",
+	    "navigationBarTitleText": "我的电商",
+	    "backgroundColor": "#ffffff",
+	    "backgroundTextStyle": "light",
+	    "enablePullDownRefresh":"false"
+	},
+	 "tabBar": {
+	    "color": "#999999",
+	    "selectedColor": "#0ac908",
+	    "borderStyle": "white",
+	    "backgroundColor": "#f7f7fa",
+	    "list": [
+	    {
+	      "pagePath": "pages/index/index",
+	      "iconPath": "assets/images/icon_home_normal.png",
+	      "selectedIconPath": "assets/images/icon_home_selected.png",
+	      "text": "首页"
+	    },
+	    {
+	      "pagePath": "pages/fl/index",
+	      "iconPath": "assets/images/category_normal.png",
+	      "selectedIconPath": "assets/images/category_selected.png",
+	      "text": "分类展示一"
+	    },
+	    {
+	      "pagePath": "pages/fl2/index",
+	      "iconPath": "assets/images/category_normal.png",
+	      "selectedIconPath": "assets/images/category_selected.png",
+	      "text": "分类展示二"
+	    },
+	    {
+	      "pagePath": "pages/page801435/index",
+	      "iconPath": "assets/images/shoppingcart_normal.png",
+	      "selectedIconPath": "assets/images/shoppingcart_selected.png",
+	      "text": "自定义展示"
+	    },
+	    {
+	      "pagePath": "pages/about/index",
+	      "iconPath": "assets/images/mine_normal.png",
+	      "selectedIconPath": "assets/images/mine_selected.png",
+	      "text": "我的"
+	    }
+	    ]
+	 }
+}

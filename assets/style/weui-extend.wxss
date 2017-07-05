@@ -1,0 +1,159 @@
+.weui-media-box__thumb{
+	width:60px;
+	height:60px;
+}
+.slide-image{
+  width:100%;
+}
+.weui-grids{
+  border:0;
+}
+.weui-grid {
+  border:0;
+}
+.weui-grid__icon {
+	width:40px;
+	height:40px;
+}
+.weui-navbar {
+	border-bottom:0
+}
+
+.weui-navbar__item {
+	position: relative;
+	display: block;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	padding: 13rpx 0;
+	text-align: center;
+	font-size: 0;
+  border-top:1rpx solid #ccc;
+	border-bottom:1rpx solid #ccc;
+    border-right:1rpx solid #ccc;
+}
+.weui-navbar__item:last-child{
+  border-right:0rpx;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+	color: #1aad19;
+	background-color: #FFF;
+    border-bottom:1rpx solid #FFF;
+}
+.weui-navbar__item.weui-bar__item_on:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #e21323;
+    bottom: -1rpx;
+    left: 0;
+}
+
+
+.weui-vertical-tab {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+    border-top:1rpx solid #ccc
+}
+
+.weui-vertical-navbar {
+	width: 25%;
+	background: #fafafa;
+  float:left;
+}
+
+.weui-vertical-tab__panel {
+	width: 75%;
+	background: #fff;
+  float:left;
+}
+
+.weui-vertical-navbar__item {
+	color: #7c7c7c;
+	font-size: 15px;
+    padding: 13px 0;
+	text-align: center;
+	border-bottom: 1rpx solid #ccc;
+    border-right: 1rpx solid #ccc;
+}
+
+
+.weui-vertical-navbar__item.weui-vertical-bar__item_on {
+	background: #FFF;
+	border-right: 1rpx solid #FFF;
+    position: relative;
+}
+
+.weui-vertical-navbar__item.weui-vertical-bar__item_on:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #e21323;
+    top: 0;
+    right: 0;
+}
+
+.weui-vertical-tab__content{
+  padding:5rpx;
+}
+
+.weui-grid-33{
+	width:33.33333333%;
+}
+.weui-grid-25{
+	width:25%;
+}
+.weui-grid-50{
+	width:50%;
+}
+
+
+.prompt-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #939393;
+}
+
+.prompt-message {
+    margin-top: 0;
+    text-align: center;
+}
+
+.prompt-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.prompt-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 2px 0;
+}
+
+.prompt-text {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.prompt-button {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.prompt-button {
+    margin: 4rpx auto;
+    width: 100px;
+    padding: 2px 0;
+    border: 1rpx solid #eee;
+}
+

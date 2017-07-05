@@ -1,0 +1,8 @@
+{
+	"navigationBarBackgroundColor": "#009944",
+	"navigationBarTextStyle": "white",
+	"navigationBarTitleText": "分类展示页面1",
+	"backgroundColor": "#ffffff",
+	"backgroundTextStyle": "light",
+	"enablePullDownRefresh":"false"
+}

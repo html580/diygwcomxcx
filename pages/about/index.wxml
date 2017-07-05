@@ -1,0 +1,35 @@
+<view class="container">  
+ <view class="weui-msg view1"> 
+  <image src="http://lib.diygw.com/upload/30/image/2017/06/13.png" class="" mode="scaleToFill" style="width:50px;height:50px" /> 
+ </view>  
+ <view class="weui-grids"> 
+  <block wx:for-items="{{grids1}}" wx:key="{{index}}"> 
+   <navigator bindtap="navigateTo" data-url="{{item.url}}" class="weui-grid weui-grid-25" hover-class="weui-grid_active"> 
+    <image class="weui-grid__icon" src="{{item.thumb_url}}" mode="scaleToFill" style="width:40px;height:40px;" /> 
+    <view class="weui-grid__label">
+     {{item.title}}
+    </view> 
+   </navigator> 
+  </block> 
+ </view>  
+ <view> 
+  <view class="weui-media-box weui-media-box_small-appmsg"> 
+   <view class="weui-cells  weui-cells_after-title"> 
+    <block wx:for-items="{{msgs1}}" wx:key="{{index}}"> 
+     <navigator bindtap="navigateTo" data-url="{{item.url}}" class="weui-cell weui-cell_access"> 
+      <view class="weui-cell__hd">
+       <image style="width: 20px;height: 20px;margin-right: 5px" src="{{item.thumb_url}}" />
+      </view> 
+      <view class="weui-cell__bd weui-cell_primary"> 
+       <view>
+        {{item.title}}
+       </view> 
+      </view> 
+      <view class="weui-cell__ft"></view> 
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view> 
+     </navigator> 
+    </block> 
+   </view> 
+  </view> 
+ </view> 
+</view>

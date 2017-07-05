@@ -1,0 +1,15 @@
+<view class="container">   
+ <view class="weui-article"> 
+  <block wx:for-items="{{rowdata1}}" wx:key="{{index}}"> 
+   <view>
+    <image src="{{item.name_807009Url}}" style="max-height:150px;width:100%;" mode="scaleToFill" />
+   </view> 
+   <view>
+    {{item.name_277385}}
+   </view> 
+   <view>
+    {{item.name_288441}}
+   </view> 
+  </block> 
+ </view> 
+</view>

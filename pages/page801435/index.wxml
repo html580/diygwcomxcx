@@ -1,0 +1,41 @@
+<view class="container">   
+ <view> 
+  <block wx:for-items="{{msgs1}}" wx:key="{{index}}"> 
+   <navigator class="weui-media-box weui-media-box_appmsg  ajax-page" data-id="{{item.id}}" data-url="{{item.url}}" page="details941358" bindtap="navigateTo" > 
+    <view class="weui-media-box__hd"> 
+     <image alt="" src="{{item.name_807009}}" class="weui-media-box__thumb" /> 
+    </view> 
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg"> 
+     <view class="weui-media-box__title cc">
+      <view class="weui-pr">
+       自定义标题：{{item.name_277385}}
+      </view>
+     </view> 
+     <view class="weui-media-box__desc" style="position:relative;">
+      <view class="weui-pr">
+       内容描述：{{item.name_288441}}
+      </view>
+      <view style="text-align: right;"> 
+      <image src="http://lib.diygw.com/upload/30/image/20170703/qg.jpg" style="width:100px;height:40px" /> 
+     </view>
+     </view> 
+      
+    </view> 
+   </navigator> 
+  </block> 
+  <view class="prompt-container"> 
+   <view class="prompt-message" hidden="{{ msgsHasNext1 }}"> 
+    <image src="../../assets/images/iconfont-empty.png" class="prompt-icon" /> 
+    <view class="prompt-title">
+     温馨提示
+    </view> 
+    <view class="prompt-text">
+     没有更多内容了哟
+    </view> 
+   </view> 
+   <view class="prompt-button-area" hidden="{{ !msgsHasNext1 }}"> 
+    <button type="primary" size="default" class="prompt-button" hover-class="button-hover" bindtap="getMsgs1">点击加载</button> 
+   </view> 
+  </view> 
+ </view> 
+</view>
